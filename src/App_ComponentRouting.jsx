@@ -11,28 +11,22 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+    <BrowserRouter>
         <Routes>
-
           <Route path='/' element={<HomePage />} />
-          <Route path='/about' element={<AboutPage />} />
+          <Route path='/about/services' element={<AboutPage />} />
           <Route path='/contact' element={<ContactPage />} />
-          {/* need a page for any not-matched route */}
-          <Route path='*' element={<PageNotFound />} />
+          {/* Need a page for any not-matched route */}
+          <Route path='*' element={<PageNotFound />} /> 
+
           {/* <Route path='/' element={<HomePage />}>
-            {/* <Route path='about' element={<AboutPage />} /> */}
-            {/* <Route path='about'>
+            <Route path='about'>
               <Route path='services' element={<AboutPage />} />
             </Route>
-            <Route path='contact' element={<ContactPage />} /> */} */
-
-          {/* </Route>
-           */}
-           
+            <Route path='contact' element={<ContactPage />} />
+          </Route> */}
         </Routes>
-        
-       </BrowserRouter>
-
+      </BrowserRouter>
     </>
   )
 }
