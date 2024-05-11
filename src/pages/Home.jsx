@@ -1,5 +1,15 @@
+import { Link } from "react-router-dom";
 
 
-export default function Homepage(){
-    return (<h1>Home Page</h1>);
+export default function HomePage(){
+	return (<div>
+
+		<h1>Home page</h1>
+		<Link to={"/about/services"}>
+			About
+		</Link>
+		<Link to={"/contact"}>
+			Contact
+		</Link>
+	</div>);
 }
